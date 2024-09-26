@@ -1,8 +1,6 @@
-from typing import Annotated
-
-from fastapi import APIRouter, Path
+from fastapi import APIRouter
 from schemas import CreateFile
-import crud
+from file import crud
 
 router = APIRouter(prefix="/file", tags=["File"])
 
